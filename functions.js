@@ -21,7 +21,7 @@ console.log(lastLetter("island"));
 //number, and returns number * number.
 var square = function(n){
 	return n*n;
-}
+};
 
 console.log(square(3));
 console.log(square(5));
@@ -30,7 +30,7 @@ console.log(square(5));
 //returns the negative of that number.
 var negate = function(n){
 	return n*-1;
-}
+};
 
 console.log(negate(5));
 console.log(negate(-8));
@@ -43,7 +43,7 @@ var toArray = function(one, two, three){
   array.push(two);
   array.push(three);
   return array;
-}
+};
 
 console.log(toArray(1, 4, 5));
 console.log(toArray(8, 9, 10));
@@ -52,7 +52,7 @@ console.log(toArray(8, 9, 10));
 //and returns true if the given string's first letter is 'A' and false otherwise.
 var starsWithA = function(s){
   return s.charAt(0).toUpperCase() === "A"
-}
+};
 
 console.log(starsWithA("aardvark"));
 console.log(starsWithA("bear"));
@@ -62,7 +62,7 @@ console.log(starsWithA("bear"));
 //returns the given string plus three exclamation marks.
 var excite = function(s){
   return s + "!!!";
-}
+};
 
 console.log(excite("yes"));
 console.log(excite("go"));
@@ -72,7 +72,7 @@ console.log(excite("go"));
 //returns true if the string contains the word 'sun' within it.
 var sun = function(s){
   return s.indexOf("sun") > -1;
-}
+};
 
 console.log(sun("sundries"));
 console.log(sun("asunder"));
@@ -83,7 +83,7 @@ console.log(sun("catapult"));
 //returns true if the number is between 0 and 1.
 var tiny = function(n){
   return 0 < n  && n < 1;
-}
+};
 
 console.log(tiny(0.3));
 console.log(tiny(14));
@@ -94,10 +94,10 @@ console.log(tiny(-5));
 // in the format 'MM:SS' (hours, minutes, and seconds) and returns the total 
 // number of seconds represented by that timespan.
 var getSeconds = function(s){
-  var minutes = Number(s.substr(0,2));
-  var seconds = Number(s.substr(3));
+  var minutes = Number(s.split(":")[0]);
+  var seconds = Number(s.split(":")[1]);
   return minutes * 60 + seconds;
-}
+};
 
 console.log(getSeconds("01:30"));
 console.log(getSeconds("10:25"));
