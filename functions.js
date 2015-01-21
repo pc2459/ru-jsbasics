@@ -4,7 +4,7 @@ var tripleFive = function(){
 	for(var i=0; i<3; i++){
 		console.log("Five!");
 	}
-}
+};
 
 tripleFive();
 
@@ -12,7 +12,7 @@ tripleFive();
 //and returns the last character in the string.
 var lastLetter = function(s){
 	return s.substr(s.length-1);
-}
+};
 
 console.log(lastLetter("hello"));
 console.log(lastLetter("island"));
@@ -51,7 +51,7 @@ console.log(toArray(8, 9, 10));
 //Write a function called 'startsWithA' which takes a single string argument 
 //and returns true if the given string's first letter is 'A' and false otherwise.
 var starsWithA = function(s){
-  return s.charAt(0).toUpperCase() === "A"
+  return s.charAt(0).toUpperCase() === "A";
 };
 
 console.log(starsWithA("aardvark"));
